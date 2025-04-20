@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Hàm kiểm tra định dạng email
+    const isValidEmail = (email) => {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailPattern.test(email);
+    };
+  
+    // Hàm kiểm tra độ dài mật khẩu
+    const isValidPassword = (password) => {
+      return password.length >= 6;
+    };
+  
     // Xử lý chuyển đổi tab
     const tabs = document.querySelectorAll(".login__tab");
     const forms = document.querySelectorAll(".login__form");
@@ -24,13 +35,23 @@ document.addEventListener("DOMContentLoaded", () => {
     loginForm.addEventListener("submit", (e) => {
       e.preventDefault();
   
-      const email = document.getElementById("login-email").value;
+      const email = document.getElementById("login-email").value.trim();
       const password = document.getElementById("login-password").value;
+  
+      // Kiểm tra định dạng email
+      if (!isValidEmail(email)) {
+        loginMessage.textContent = "Email không hợp lệ!";
+        loginMessage.style.color = "red";
+        return;
+      }
+  
       const storedUser = localStorage.getItem(email);
   
       if (storedUser) {
         const user = JSON.parse(storedUser);
         if (user.password === password) {
+          // Lưu trạng thái đăng nhập
+          localStorage.setItem("loggedInUser", email);
           loginMessage.textContent = "Đăng nhập thành công!";
           loginMessage.style.color = "green";
           setTimeout(() => {
@@ -53,16 +74,32 @@ document.addEventListener("DOMContentLoaded", () => {
     registerForm.addEventListener("submit", (e) => {
       e.preventDefault();
   
-      const email = document.getElementById("register-email").value;
+      const email = document.getElementById("register-email").value.trim();
       const password = document.getElementById("register-password").value;
       const confirmPassword = document.getElementById("confirm-password").value;
   
+      // Kiểm tra định dạng email
+      if (!isValidEmail(email)) {
+        registerMessage.textContent = "Email không hợp lệ!";
+        registerMessage.style.color = "red";
+        return;
+      }
+  
+      // Kiểm tra độ dài mật khẩu
+      if (!isValidPassword(password)) {
+        registerMessage.textContent = "Mật khẩu phải có ít nhất 6 ký tự!";
+        registerMessage.style.color = "red";
+        return;
+      }
+  
+      // Kiểm tra mật khẩu xác nhận
       if (password !== confirmPassword) {
         registerMessage.textContent = "Mật khẩu xác nhận không khớp!";
         registerMessage.style.color = "red";
         return;
       }
   
+      // Kiểm tra email đã tồn tại
       if (localStorage.getItem(email)) {
         registerMessage.textContent = "Email đã được đăng ký!";
         registerMessage.style.color = "red";

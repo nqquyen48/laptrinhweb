@@ -14,22 +14,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Cửa hàng đồ trẻ em</title>
   </head>
   <body>
     <nav>
       <a href="index.html" class="nav__logo">
-        <img src="assets/logo.png" alt="logo" /> Concung
+        <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-7808-61f7-85b0-c083d7d624da/raw?se=2025-04-20T13%3A50%3A04Z&sp=r&sv=2024-08-04&sr=b&scid=3a65358f-1613-54ac-ab11-5394fa7b3069&skoid=ae70be19-8043-4428-a990-27c58b478304&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-19T18%3A24%3A54Z&ske=2025-04-20T18%3A24%3A54Z&sks=b&skv=2024-08-04&sig=Bzyt08Tt9m3GmxZslO%2Bk/LJ5WoFHVqPFqFOSltQ4rBg%3D" alt="logo" />
       </a>
       <div class="nav__search">
         <input type="text" placeholder="Đồ dùng ăn uống, mẹ bầu, xe đẩy, bình tắm..." />
         <button class="btn"><i class="ri-search-line"></i></button>
       </div>
       <ul class="nav__links">
-        <li class="link"><a href="cart.html">Giỏ hàng</a></li>
-        <li class="link"><a href="promotions.html">Ưu đãi</a></li>
-        <li class="link"><a href="login.html">Đăng nhập</a></li>
+        <li class="link"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
+        <li class="link"><a href="promotions.html"><i class="fa-solid fa-tags"></i> Ưu đãi</a></li>
+        <li class="link"><a href="login.html"><i class="fa-solid fa-user"></i> Đăng nhập</a></li>
       </ul>
     </nav>
 
@@ -87,7 +87,7 @@
 
         <div class="popular__grid">
           <!-- Ghế Nằm, Ngồi ăn -->
-          <div class="popular__card" data-category="chairs">
+          <div class="popular__card" data-id="1" data-category="chairs">
             <img src="assets/product-1.jpg" alt="product" />
             <div class="popular__content">
               <div class="popular__card__header">
@@ -97,7 +97,7 @@
               <p>⭐⭐⭐⭐⭐ Đã bán 500+</p>
             </div>
           </div>
-          <div class="popular__card" data-category="chairs">
+          <div class="popular__card" data-id="2" data-category="chairs">
             <img src="assets/product-2.jpg" alt="product" />
             <div class="popular__content">
               <div class="popular__card__header">
@@ -107,9 +107,29 @@
               <p>⭐⭐⭐⭐⭐ Đã bán 500+</p>
             </div>
           </div>
+          <div class="popular__card" data-id="3" data-category="chairs">
+            <img src="assets/product-10.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Ghế ăn đa năng Mastela (Xám)</h4>
+                <h4>1.850.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 400+</p>
+            </div>
+          </div>
+          <div class="popular__card" data-id="4" data-category="chairs">
+            <img src="assets/product-11.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Ghế rung Fisher-Price Newborn (Hồng)</h4>
+                <h4>1.990.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 350+</p>
+            </div>
+          </div>
           
           <!-- Dụng Cụ Nấu ăn -->
-          <div class="popular__card" data-category="cooking-tools">
+          <div class="popular__card" data-id="5" data-category="cooking-tools">
             <img src="assets/product-3.jpg" alt="product" />
             <div class="popular__content">
               <div class="popular__card__header">
@@ -119,9 +139,39 @@
               <p>⭐⭐⭐⭐⭐ Đã bán 2K+</p>
             </div>
           </div>
+          <div class="popular__card" data-id="6" data-category="cooking-tools">
+            <img src="assets/product-12.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Bộ 3 nĩa silicone Mombella (Hồng)</h4>
+                <h4>95.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 1.8K+</p>
+            </div>
+          </div>
+          <div class="popular__card" data-id="7" data-category="cooking-tools">
+            <img src="assets/product-13.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Bộ bát ăn dặm Richell (Xanh)</h4>
+                <h4>120.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 1.5K+</p>
+            </div>
+          </div>
+          <div class="popular__card" data-id="8" data-category="cooking-tools">
+            <img src="assets/product-14.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Thìa dẹt cho bé Combi (Trắng)</h4>
+                <h4>80.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 1.2K+</p>
+            </div>
+          </div>
           
           <!-- Ly Uống Nước -->
-          <div class="popular__card" data-category="drinking-cups">
+          <div class="popular__card" data-id="9" data-category="drinking-cups">
             <img src="assets/product-4.jpg" alt="product" />
             <div class="popular__content">
               <div class="popular__card__header">
@@ -131,9 +181,29 @@
               <p>⭐⭐⭐⭐⭐ Đã bán 2K+</p>
             </div>
           </div>
+          <div class="popular__card" data-id="10" data-category="drinking-cups">
+            <img src="assets/product-15.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Ly tập uống có ống hút Pigeon (Hồng)</h4>
+                <h4>130.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 1.7K+</p>
+            </div>
+          </div>
+          <div class="popular__card" data-id="11" data-category="drinking-cups">
+            <img src="assets/product-16.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Ly inox chống đổ Edison (Xám)</h4>
+                <h4>115.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 1.6K+</p>
+            </div>
+          </div>
           
           <!-- Bình Nước Cho Bé -->
-          <div class="popular__card" data-category="baby-bottles">
+          <div class="popular__card" data-id="12" data-category="baby-bottles">
             <img src="assets/product-5.jpg" alt="product" />
             <div class="popular__content">
               <div class="popular__card__header">
@@ -143,9 +213,29 @@
               <p>⭐⭐⭐⭐⭐ Đã bán 2K+</p>
             </div>
           </div>
+          <div class="popular__card" data-id="13" data-category="baby-bottles">
+            <img src="assets/product-17.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Bình tập uống chống sặc Comotomo (Xanh)</h4>
+                <h4>125.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 1.9K+</p>
+            </div>
+          </div>
+          <div class="popular__card" data-id="14" data-category="baby-bottles">
+            <img src="assets/product-18.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Bình sữa chống đầy hơi Dr. Brown (Trắng)</h4>
+                <h4>140.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 1.8K+</p>
+            </div>
+          </div>
           
           <!-- Tồ, Chăn, đệm -->
-          <div class="popular__card" data-category="toys-blankets">
+          <div class="popular__card" data-id="15" data-category="toys-blankets">
             <img src="assets/product-6.jpg" alt="product" />
             <div class="popular__content">
               <div class="popular__card__header">
@@ -155,9 +245,29 @@
               <p>⭐⭐⭐⭐⭐ Đã bán 1K+</p>
             </div>
           </div>
+          <div class="popular__card" data-id="16" data-category="toys-blankets">
+            <img src="assets/product-19.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Đệm lót sơ sinh Kiza (Trắng)</h4>
+                <h4>180.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 900+</p>
+            </div>
+          </div>
+          <div class="popular__card" data-id="17" data-category="toys-blankets">
+            <img src="assets/product-20.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Tồ chơi treo nôi Tiny Love (Đa sắc)</h4>
+                <h4>250.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 850+</p>
+            </div>
+          </div>
           
           <!-- Bình Tắm Bé ăn -->
-          <div class="popular__card" data-category="bath-bottles">
+          <div class="popular__card" data-id="18" data-category="bath-bottles">
             <img src="assets/product-7.jpg" alt="product" />
             <div class="popular__content">
               <div class="popular__card__header">
@@ -167,9 +277,29 @@
               <p>⭐⭐⭐⭐⭐ Đã bán 800+</p>
             </div>
           </div>
+          <div class="popular__card" data-id="19" data-category="bath-bottles">
+            <img src="assets/product-21.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Bình tắm ăn chống tràn Beaba (Xanh)</h4>
+                <h4>100.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 750+</p>
+            </div>
+          </div>
+          <div class="popular__card" data-id="20" data-category="bath-bottles">
+            <img src="assets/product-22.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Bình tắm ăn mềm Pigeon (Vàng)</h4>
+                <h4>90.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 700+</p>
+            </div>
+          </div>
           
           <!-- Bình ủ Sữa, Giữ Nhiệt -->
-          <div class="popular__card" data-category="milk-warmers">
+          <div class="popular__card" data-id="21" data-category="milk-warmers">
             <img src="assets/product-8.jpg" alt="product" />
             <div class="popular__content">
               <div class="popular__card__header">
@@ -179,9 +309,29 @@
               <p>⭐⭐⭐⭐⭐ Đã bán 600+</p>
             </div>
           </div>
+          <div class="popular__card" data-id="22" data-category="milk-warmers">
+            <img src="assets/product-23.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Bình ủ sữa Thermos (Xám)</h4>
+                <h4>260.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 550+</p>
+            </div>
+          </div>
+          <div class="popular__card" data-id="23" data-category="milk-warmers">
+            <img src="assets/product-24.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Bình giữ nhiệt mini Avent (Xanh)</h4>
+                <h4>200.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 500+</p>
+            </div>
+          </div>
           
           <!-- Yếm ăn Cho Bé -->
-          <div class="popular__card" data-category="bibs">
+          <div class="popular__card" data-id="24" data-category="bibs">
             <img src="assets/product-9.jpg" alt="product" />
             <div class="popular__content">
               <div class="popular__card__header">
@@ -191,6 +341,33 @@
               <p>⭐⭐⭐⭐⭐ Đã bán 1.5K+</p>
             </div>
           </div>
+          <div class="popular__card" data-id="25" data-category="bibs">
+            <img src="assets/product-25.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Yếm vải cotton mềm Kiza (Xanh)</h4>
+                <h4>50.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 1.3K+</p>
+            </div>
+          </div>
+          <div class="popular__card" data-id="26" data-category="bibs">
+            <img src="assets/product-26.jpg" alt="product" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Yếm ăn chống thấm Munchkin (Hồng)</h4>
+                <h4>65.000₫</h4>
+              </div>
+              <p>⭐⭐⭐⭐⭐ Đã bán 1.2K+</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phân trang -->
+        <div class="pagination">
+          <button id="prev-page" class="pagination__btn">Trước</button>
+          <span id="page-info">Trang 1</span>
+          <button id="next-page" class="pagination__btn">Sau</button>
         </div>
       </div>
     </section>
@@ -225,6 +402,6 @@
       </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

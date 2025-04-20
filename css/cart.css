@@ -61,14 +61,10 @@ nav {
   color: var(--primary-color);
   display: flex;
   align-items: center;
-  transition: 0.3s;
-}
-
-.nav__logo:hover {
-  color: var(--primary-color-dark);
 }
 
 .nav__logo img {
+  border-radius: 50px;
   width: 50px;
   height: 50px;
   margin-right: 0.5rem;
@@ -201,14 +197,13 @@ nav {
   margin-bottom: 0.5rem;
 }
 
-.category__link {
+.category__list a {
   font-size: 0.9rem;
   color: var(--text-light);
   transition: 0.3s;
 }
 
-.category__link:hover,
-.category__link.active {
+.category__list a:hover {
   color: var(--primary-color);
 }
 
@@ -344,7 +339,7 @@ nav {
   margin-bottom: 0.5rem;
 }
 
-.cart__item__quantity {
+ viscous cart__item__quantity {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -434,79 +429,6 @@ nav {
   background-color: var(--primary-color-dark);
 }
 
-/* Promotions Styles */
-.promotions__container {
-  display: flex;
-  flex-direction: column;
-}
-
-.promotions__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-
-.promotion__card {
-  background-color: var(--white);
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.promotion__content {
-  padding: 1rem;
-}
-
-.promotion__content h4 {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-dark);
-  margin-bottom: 0.5rem;
-}
-
-.price__info {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.original__price {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  text-decoration: line-through;
-}
-
-.discounted__price {
-  font-size: 1rem;
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-.discount__badge {
-  background-color: var(--primary-color);
-  color: var(--white);
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.5rem;
-  font-size: 0.8rem;
-}
-
-.add__to__cart__btn {
-  width: 100%;
-  padding: 0.5rem;
-  border: none;
-  background-color: var(--primary-color);
-  color: var(--white);
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: 0.3s;
-}
-
-.add__to__cart__btn:hover {
-  background-color: var(--primary-color-dark);
-}
-
 .footer {
   background-color: var(--extra-light);
 }
@@ -564,10 +486,6 @@ nav {
   .popular__grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .promotions__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media (width < 900px) {
@@ -576,10 +494,6 @@ nav {
   }
 
   .popular__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .promotions__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -610,10 +524,6 @@ nav {
   }
 
   .popular__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .promotions__grid {
     grid-template-columns: repeat(1, 1fr);
   }
 
