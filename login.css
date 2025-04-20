@@ -507,6 +507,100 @@ nav {
   background-color: var(--primary-color-dark);
 }
 
+/* Login Styles */
+.login__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+}
+
+.login__wrapper {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login__tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.login__tab {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--extra-light);
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login__tab.active,
+.login__tab:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.login__form {
+  display: none;
+}
+
+.login__form.active {
+  display: block;
+}
+
+.form__group {
+  margin-bottom: 1rem;
+}
+
+.form__group label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.form__group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form__group input:focus {
+  border-color: var(--primary-color);
+}
+
+.submit__btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.submit__btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.form__message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 .footer {
   background-color: var(--extra-light);
 }

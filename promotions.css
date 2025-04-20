@@ -61,11 +61,6 @@ nav {
   color: var(--primary-color);
   display: flex;
   align-items: center;
-  transition: 0.3s;
-}
-
-.nav__logo:hover {
-  color: var(--primary-color-dark);
 }
 
 .nav__logo img {
@@ -201,14 +196,13 @@ nav {
   margin-bottom: 0.5rem;
 }
 
-.category__link {
+.category__list a {
   font-size: 0.9rem;
   color: var(--text-light);
   transition: 0.3s;
 }
 
-.category__link:hover,
-.category__link.active {
+.category__list a:hover {
   color: var(--primary-color);
 }
 

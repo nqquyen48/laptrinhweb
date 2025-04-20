@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <title>Giỏ hàng - Concung</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="logo" /> Concung
+      </a>
+      <div class="nav__search">
+        <input type="text" placeholder="Đồ dùng ăn uống, mẹ bầu, xe đẩy, bình tắm..." />
+        <button class="btn"><i class="ri-search-line"></i></button>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="cart.html">Giỏ hàng</a></li>
+        <li class="link"><a href="promotions.html">Ưu đãi</a></li>
+        <li class="link"><a href="login.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+
+    <section class="section__container cart__container">
+      <h2 class="section__header">Giỏ hàng của bạn</h2>
+      <div class="cart__wrapper">
+        <div class="cart__items">
+          <div class="cart__item" data-id="1">
+            <img src="assets/product-1.jpg" alt="product" class="cart__item__image" />
+            <div class="cart__item__details">
+              <h4>Ghế rung trẻ em Joie Dreamer Lola</h4>
+              <p class="cart__item__price">2.258.000₫</p>
+              <div class="cart__item__quantity">
+                <button class="quantity__btn decrease">-</button>
+                <input type="number" value="1" min="1" class="quantity__input" />
+                <button class="quantity__btn increase">+</button>
+              </div>
+              <button class="cart__item__remove">Xóa</button>
+            </div>
+          </div>
+          <div class="cart__item" data-id="2">
+            <img src="assets/product-3.jpg" alt="product" class="cart__item__image" />
+            <div class="cart__item__details">
+              <h4>Bộ 2 muỗng silicone Mombella (Xanh)</h4>
+              <p class="cart__item__price">89.500₫</p>
+              <div class="cart__item__quantity">
+                <button class="quantity__btn decrease">-</button>
+                <input type="number" value="2" min="1" class="quantity__input" />
+                <button class="quantity__btn increase">+</button>
+              </div>
+              <button class="cart__item__remove">Xóa</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart__summary">
+          <h3>Tóm tắt đơn hàng</h3>
+          <div class="summary__item">
+            <span>Tạm tính:</span>
+            <span class="subtotal">2.437.000₫</span>
+          </div>
+          <div class="summary__item">
+            <span>Phí vận chuyển:</span>
+            <span>30.000₫</span>
+          </div>
+          <div class="summary__item total">
+            <span>Tổng cộng:</span>
+            <span class="total__amount">2.467.000₫</span>
+          </div>
+          <button class="checkout__btn">Thanh toán</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3><img src="assets/logo.png" alt="logo" /> Concung</h3>
+          <p>
+            Concung là cửa hàng chuyên cung cấp đồ dùng trẻ em chất lượng cao, từ bình sữa, xe đẩy, đến đồ chơi an toàn.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Chính sách</h4>
+          <p>FAQs</p>
+          <p>Điều khoản & Điều kiện</p>
+          <p>Chính sách bảo mật</p>
+        </div>
+        <div class="footer__col">
+          <h4>Liên hệ</h4>
+          <p>Truyền thông xã hội</p>
+          <p>Trung tâm trợ giúp</p>
+          <p>Quan hệ đối tác</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook-messenger"></i>
+        <i class="fa-brands fa-line"></i>
+        <i class="fa-solid fa-phone"></i>
+        Bản quyền © 2025 Concung
+      </div>
+    </footer>
+
+    <script src="cart.js"></script>
+  </body>
+</html>

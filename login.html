@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="login.css" />
+    <title>Đăng nhập - Concung</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="logo" /> Concung
+      </a>
+      <div class="nav__search">
+        <input type="text" placeholder="Đồ dùng ăn uống, mẹ bầu, xe đẩy, bình tắm..." />
+        <button class="btn"><i class="ri-search-line"></i></button>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="cart.html">Giỏ hàng</a></li>
+        <li class="link"><a href="promotions.html">Ưu đãi</a></li>
+        <li class="link"><a href="login.html">Đăng nhập</a></li>
+      </ul>
+    </nav>
+
+    <section class="section__container login__container">
+      <div class="login__wrapper">
+        <div class="login__tabs">
+          <button class="login__tab active" data-tab="login">Đăng nhập</button>
+          <button class="login__tab" data-tab="register">Đăng ký</button>
+        </div>
+
+        <!-- Form Đăng nhập -->
+        <div class="login__form active" id="login-form">
+          <h2 class="section__header">Đăng nhập</h2>
+          <div class="form__group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="Nhập email của bạn" required />
+          </div>
+          <div class="form__group">
+            <label for="login-password">Mật khẩu</label>
+            <input type="password" id="login-password" placeholder="Nhập mật khẩu" required />
+          </div>
+          <button class="submit__btn">Đăng nhập</button>
+          <p class="form__message" id="login-message"></p>
+        </div>
+
+        <!-- Form Đăng ký -->
+        <div class="login__form" id="register-form">
+          <h2 class="section__header">Đăng ký</h2>
+          <div class="form__group">
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" placeholder="Nhập email của bạn" required />
+          </div>
+          <div class="form__group">
+            <label for="register-password">Mật khẩu</label>
+            <input type="password" id="register-password" placeholder="Nhập mật khẩu" required />
+          </div>
+          <div class="form__group">
+            <label for="confirm-password">Xác nhận mật khẩu</label>
+            <input type="password" id="confirm-password" placeholder="Xác nhận mật khẩu" required />
+          </div>
+          <button class="submit__btn">Đăng ký</button>
+          <p class="form__message" id="register-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3><img src="assets/logo.png" alt="logo" /> Concung</h3>
+          <p>
+            Concung là cửa hàng chuyên cung cấp đồ dùng trẻ em chất lượng cao, từ bình sữa, xe đẩy, đến đồ chơi an toàn.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Chính sách</h4>
+          <p>FAQs</p>
+          <p>Điều khoản & Điều kiện</p>
+          <p>Chính sách bảo mật</p>
+        </div>
+        <div class="footer__col">
+          <h4>Liên hệ</h4>
+          <p>Truyền thông xã hội</p>
+          <p>Trung tâm trợ giúp</p>
+          <p>Quan hệ đối tác</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook-messenger"></i>
+        <i class="fa-brands fa-line"></i>
+        <i class="fa-solid fa-phone"></i>
+        Bản quyền © 2025 Concung
+      </div>
+    </footer>
+
+    <script src="login.js"></script>
+  </body>
+</html>
